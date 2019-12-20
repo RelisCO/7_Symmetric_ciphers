@@ -20,6 +20,8 @@ class Enigma_killer():
             i = ord(i)
             print(i)
             i -= int(expect_key)
+            if i<0:
+                i +=65336
             i=chr(i)
             new_text.append(i)
         new_text = ''.join(new_text)
@@ -29,6 +31,12 @@ class Enigma_killer():
         '''
         Расшифровывает тест зашифрованный методом Вернама
         '''
+        length_of_the_key = 0
+        text = list(test)
+        new_text = []
+
+        while Proverka == True:
+            length_of_the_key += 1
 
 
 

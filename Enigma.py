@@ -13,6 +13,8 @@ class Enigma():
         for i in text:
             i=ord(i)
             i+= int(key)
+            if i>= 65536:
+                i -= 65536
             i=chr(i)
             new_text.append(i)
         new_text = ''.join(new_text)
