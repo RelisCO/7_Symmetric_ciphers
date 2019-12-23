@@ -37,6 +37,7 @@ class Enigma_killer():
 
         while Proverka == True:
             length_of_the_key += 1
+            
 
 
 
